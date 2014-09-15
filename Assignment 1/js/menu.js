@@ -1,3 +1,5 @@
+// easy management of menu on all pages that has this particular menu
+
 /*global document */
 document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">' +
         '<div class="container">' +

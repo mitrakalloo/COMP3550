@@ -1,3 +1,5 @@
+// changes the footer of all pages that have this particular footer
+
 /*global document */
 document.write ('<footer>'+
             '<div class="row">' +
