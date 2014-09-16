@@ -20,9 +20,21 @@ document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navi
             '</div>' +
             '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">' +
                 '<ul class="nav navbar-nav">'+
-                   '<li>' +
-                        '<a href="../Information/information.html">Information</a>' +
-                    '</li>' +
+                   '<li class="dropdown">'+
+                        '<a data-toggle="dropdown" href="#">Information</a>'+
+                            '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">'+
+                                     '<li>' +
+                                         '<a href="../Information/Reducing_Risk_and_Enhancing_Resilience.html">Reducing Risk and Enhancing Resilience</a>' +
+                                     '</li>' +
+                
+                                     '<li class="divider"></li>'+
+                                        '<li class="nav-header">HEADING</li>'+
+                                            '<li><a href="#">Youth Involvement in Violent Crime</a></li>'+
+                                            '<li><a href="#">The Impact of Youth Violence on Caribbean Human Development</a></li>'+
+                
+                                    
+                            '</ul>'+
+                    '</li>'+
                     '<li>' +
                       '<a href="../Problems/problems.html">Problems</a>' +
                     '</li>' +
@@ -32,6 +44,7 @@ document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navi
                     '<li>' +
                         '<a href="../Contact/contact.html">Contact</a>' +
                     '</li>' +
+                                    
                 '</ul>' +
             '</div>' +
         '</div>' +
