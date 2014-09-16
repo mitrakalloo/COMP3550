@@ -24,14 +24,14 @@ document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navi
                         '<a data-toggle="dropdown" href="#">Information</a>'+
                             '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">'+
                                      '<li>' +
-                                         '<a href="../Information/Reducing_Risk_and_Enhancing_Resilience.html">Reducing Risk and Enhancing Resilience</a>' +
+                                         '<a href="../Information/Reducing Risk and Enhancing Resilience.html">Reducing Risk and Enhancing Resilience</a>' +
                                      '</li>' +
                 
                                      '<li class="divider"></li>'+
-                                        '<li class="nav-header">HEADING</li>'+
-                                            '<li><a href="#">Youth Involvement in Violent Crime</a></li>'+
-                                            '<li><a href="#">The Impact of Youth Violence on Caribbean Human Development</a></li>'+
                 
+                                     '<li>'+
+                                         '<a href="../Information/more info.html">More Info</a>'+
+                                     '</li>'+
                                     
                             '</ul>'+
                     '</li>'+
