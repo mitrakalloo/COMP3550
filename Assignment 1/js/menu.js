@@ -21,7 +21,7 @@ document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navi
             '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">' +
                 '<ul class="nav navbar-nav">'+
                    '<li>' +
-                        '<a href="../About/about.html">About</a>' +
+                        '<a href="../Information/information.html">Information</a>' +
                     '</li>' +
                     '<li>' +
                       '<a href="../Problems/problems.html">Problems</a>' +
