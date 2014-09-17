@@ -1,7 +1,7 @@
 // easy management of menu on all pages that has this particular menu
 
 /*global document */
-document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">' +
+document.write('<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">' +
         '<div class="container">' +
             '<div class="navbar-header">' +
                 '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">' +
@@ -19,22 +19,22 @@ document.write ( '<nav class="navbar navbar-inverse navbar-fixed-top" role="navi
                 '</a>' +
             '</div>' +
             '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">' +
-                '<ul class="nav navbar-nav">'+
-                   '<li class="dropdown">'+
-                        '<a data-toggle="dropdown" href="#">Information</a>'+
-                            '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">'+
+                '<ul class="nav navbar-nav">' +
+                   '<li class="dropdown">' +
+                        '<a data-toggle="dropdown" href="#">Information</a>' +
+                            '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">' +
                                      '<li>' +
                                          '<a href="../Information/Reducing Risk and Enhancing Resilience.html">Reducing Risk and Enhancing Resilience</a>' +
                                      '</li>' +
                 
-                                     '<li class="divider"></li>'+
+                                     '<li class="divider"></li>' +
                 
-                                     '<li>'+
-                                         '<a href="../Information/more info.html">More Info</a>'+
-                                     '</li>'+
+                                     '<li>' +
+                                         '<a href="../Information/more info.html">More Info</a>' +
+                                     '</li>' +
                                     
-                            '</ul>'+
-                    '</li>'+
+                            '</ul>' +
+                    '</li>' +
                     '<li>' +
                       '<a href="../Problems/problems.html">Problems</a>' +
                     '</li>' +
