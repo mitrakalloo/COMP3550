@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../../css/bootstrap.min.css" >
+	<!-- <link rel="stylesheet" href="css/bootstrap-checkbox.css"> -->
+	<link rel="stylesheet" href="../../css/MyCSS.css">
+
+	
+	<script src="../../js/menu.js"> </script>
+	<script src="../../js/MyScript.js"></script>
+	<!--<script src="modernizr.custom.97461.js"></script> -->
+
+	<title>Contact</title>
+
+
+</head>
+
+<body >
+
+<div class="container">
+
+<div class="page-header ">
+	<h1>Don't miss another death!!</h1>
+	<h2>Subscribe for the latest murders </h2>
+</div>
+
+<!-- FORM  -->
+
+<div name="data">
+	<form name="form" >
+
+	<div class="form-group ">
+		<label for="firstName">Full Name</label>
+		<input class="form-control " type="text" name="fname" autofocus="on" required><br>
+	</div>
+
+	<!-- <div class="form-group ">
+		<label for="lastName">Last name</label>
+		<input class="form-control " type="text" name="lname" ><br>
+	</div> -->	
+
+   	<div class="form-group ">
+   		<label for="email">E-mail Address</label>
+   		<input class="form-control " type="email" name="email" required><br>
+   		<input type="checkbox" name="email">Subscribe for our monthly news letter.
+   	</div>
+
+   	<div class="form-group ">
+   		<label for="phone">Contact Number</label>
+   		<input class="form-control " type="tel" name="telephone" placeholder="xxx-xxxx" ><br>
+   	</div >	
+
+   	<div class="form-group ">
+   		<textarea name="comments" id="textbox" cols="54" rows="5" placeholder="Comments" maxlength="200" wrap="soft"></textarea>
+   	</div>
+   	
+   	<div id="Btn" class="form-group ">
+   		<button  class="btn btn-primary form-group"  type="submit" onclick="return checkPhone()">Submit</button>
+   	</div>
+
+    </form>
+
+
+</div>
+
+</div>
+	
+    <script src="../../js/jquery-1.11.0.js"></script>
+	<script src="../../js/bootstrap.min.js"></script> 
+    
+</body>
+</html>
+
+

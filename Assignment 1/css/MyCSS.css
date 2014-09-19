@@ -25,3 +25,32 @@ footer {
     }
 }
 
+.page-header{
+    text-align: center;
+    background-image:url(http://images2.layoutsparks.com/1/107938/blood-splatter-red-blotch.jpg); 
+    background-position: center;
+}
+
+form{
+    padding-bottom: 20px;
+}
+
+input[class^="form"]:focus{ 
+    width: 100%; 
+}
+
+div[name="data"]{
+    width:35%;
+    margin: 0 auto;
+}
+
+#Btn{
+    width: 15%;
+    margin: 0 auto;   
+}
+
+textarea{
+    position: relative;
+    padding-right: 0 auto;
+    padding-left: 0 auto;
+}
