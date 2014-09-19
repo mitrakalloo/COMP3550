@@ -4,7 +4,7 @@
 document.write('<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">' +
         '<div class="container">' +
             '<div class="navbar-header">' +
-                '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">' +
+                '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">' +
                     '<span class="sr-only">Toggle navigation</span>' +
                     '<span class="icon-bar"></span>' +
                     '<span class="icon-bar"></span>' +
@@ -20,21 +20,15 @@ document.write('<nav class="navbar navbar-inverse navbar-fixed-top" role="naviga
             '</div>' +
             '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">' +
                 '<ul class="nav navbar-nav">' +
-                   '<li class="dropdown">' +
-                        '<a data-toggle="dropdown" href="#">Information</a>' +
-                            '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">' +
-                                     '<li>' +
-                                         '<a href="../Information/Reducing Risk and Enhancing Resilience.html">Reducing Risk and Enhancing Resilience</a>' +
-                                     '</li>' +
-                
-                                     '<li class="divider"></li>' +
-                
-                                     '<li>' +
-                                         '<a href="../Information/more info.html">More Info</a>' +
-                                     '</li>' +
-                                    
-                            '</ul>' +
+                    '<li class="dropdown">' +
+                       '<a data-toggle="dropdown" href="#">Information</a>' +
+                                  '<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">' +
+                                        '<li role="presentation"><a role="menuitem" tabindex="-1" href="../Information/Reducing Risk and Enhancing Resilience.html">Reducing Risk and Enhancing Resilience</a></li>' +
+                                        '<li role="presentation" class="divider"></li>' +
+                                        '<li role="presentation"><a role="menuitem" tabindex="-1" href="../Information/more info.html">More Info</a></li>' +
+                                '</ul>' +
                     '</li>' +
+               
                     '<li>' +
                       '<a href="../Problems/problems.html">Problems</a>' +
                     '</li>' +
@@ -43,8 +37,7 @@ document.write('<nav class="navbar navbar-inverse navbar-fixed-top" role="naviga
                     '</li>' +
                     '<li>' +
                         '<a href="../Contact/contact.html">Contact</a>' +
-                    '</li>' +
-                                    
+                    '</li>' +                  
                 '</ul>' +
             '</div>' +
         '</div>' +
