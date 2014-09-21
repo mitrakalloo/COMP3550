@@ -12,9 +12,17 @@
 	<link rel="stylesheet" href="../../css/bootstrap.min.css" >
 	<!-- <link rel="stylesheet" href="css/bootstrap-checkbox.css"> -->
 	<link rel="stylesheet" href="../../css/MyCSS.css">
+    
 
 	
 	<script src="../../js/MyScript.js"></script>
+    <script src="../../js/jquery-1.11.0.js"></script>
+    <script src="../../js/contact-form.js"></script>
+    
+    
+            <!-- form validation   -->
+    <link rel="stylesheet" href="../../css/bootstrapValidator.min.css"/>
+    <script type="text/javascript" src="../../js/bootstrapValidator.min.js"></script>
 	<!--<script src="modernizr.custom.97461.js"></script> -->
 
 	
@@ -29,58 +37,74 @@
 <div class="container">
     
     <hr/>
-
+    
         <div class="page-header ">
             <h1>Don't miss another death!!</h1>
             <h2>Subscribe for the latest murders </h2>
         </div>
+    
+                <!--  FORM -->
+    
+    <form id="contactForm" method="post" class="form-horizontal">
+			    <div class="form-group">
+			        <label class="col-md-3 control-label">First Name</label>
+			        <div class="col-md-5">
+			            <input type="text" class="form-control" name="fname" />
+			        </div>
+			    </div>
 
-        <!-- FORM  -->
+			    <div class="form-group">
+			        <label class="col-md-3 control-label">Last Name</label>
+			        <div class="col-md-5">
+			            <input type="text" class="form-control" name="lname" />
+			        </div>
+			    </div>
 
-        
-            <form class="col-md-6 col-md-offset-3" name="form" >
-                <div class="well text-left">
-                    <div class="form-group ">
-                        <label for="firstName">Full Name</label>
-                        <input class="form-control" id="firstName" type="text" name="fname" autofocus required><br>
-                    </div>
+			    <div class="form-group">
+			        <label class="col-md-3 control-label">Email Address</label>
+			        <div class="col-md-5">
+			            <input type="text" class="form-control" name="email" />
+			        </div>
+			    </div>
 
-                    <!-- <div class="form-group ">
-                        <label for="lastName">Last name</label>
-                        <input class="form-control " type="text" name="lname" ><br>
-                    </div> -->	
+			    <div class="form-group">
+			        <label class="col-md-3 control-label">Phone Number</label>
+			        <div class="col-md-3">
+			            <input type="text" class="form-control" name="phone" />
+			        </div>
+			    </div>
 
-                    <div class="form-group ">
-                        <label for="email">E-mail Address</label>
-                        <input class="form-control" id="email" type="email" name="email" required><br>
-                        <input type="checkbox" name="email">Subscribe for our monthly news letter.
-                    </div>
-
-                    <div class="form-group ">
-                        <label for="phone">Contact Number</label>
-                        <input class="form-control" id="phone" type="tel" name="telephone" placeholder="xxx-xxxx" ><br>
-                    </div >	
-
-                    <div class="form-group ">
-                        <textarea name="comments" id="textbox" cols="54" rows="5" placeholder="Comments" maxlength="200" wrap="soft"></textarea>
-                    </div>
-
-                    <div id="Btn" class="form-group ">
-                        <button  class="btn btn-primary form-group"  type="submit" onclick="return checkPhone()">Submit</button>
-                    </div>
-                </div>
-
-            </form>
+			    <div class="form-group">
+			    	<label class="col-md-3 control-label">Subscribe to monthly newsletter</label>
+	                <div class="col-md-3">
+	                    <input type="checkbox"  class="form-control"  name="check" />
+	                    
+	                </div>
+            	</div>
 
 
-      
+			    <div class="form-group">
+			        <label class="col-md-3 control-label">Description</label>
+			        <div class="col-md-5">
+			            <textarea class="form-control" name="description" rows="5"></textarea>
+			        </div>
+			    </div>
+			    
+
+			    <div class="form-group">
+			        <div class="col-md-5 col-md-offset-3">
+			            <button type="submit" class="btn btn-primary form-group">Submit</button>
+			        </div>
+			    </div>
+			</form>
+    
+
     
      <!-- Footer -->
         <script  type="text/javascript" src="../../js/footer.js"></script>
 
 </div>
 	
-    <script src="../../js/jquery-1.11.0.js"></script>
 	<script src="../../js/bootstrap.min.js"></script> 
     
 </body>
