@@ -44,14 +44,15 @@ $(document).ready(function() {
                 },
 
                 email: {
-                	validators : {
-                		notEmpty: {
-                            message: 'Email is required'
+                	validators: {   
+                        notEmpty: {
+                            message: 'enter an email address'
                         },
-                		emailAddress: {
-                			message: 'proper email address needed'
-                		}
-                	}
+                        emailAddress: {
+                            message: 'Email not in proper format'
+                        }
+                            
+                    }
                 },
 
                 phone: {
@@ -96,3 +97,60 @@ $(document).ready(function() {
             }
         });
 });
+
+
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
+
+$(function() {
+    $('form').submit(function() {
+        var obj = JSON.stringify($('form').serializeObject());
+        console.save(JSON.parse(obj));
+        return false;
+    });
+});
+
+
+(function(console){
+
+console.save = function(data, filename){
+
+    if(!data) {
+        console.error('Console.save: No data')
+        return;
+    }
+
+    if(!filename) filename = 'contact-form.json'
+
+    if(typeof data === "object"){
+        data = JSON.stringify(data, undefined, 4)
+    }
+
+    var blob = new Blob([data], {type: 'text/json'}),
+        e    = document.createEvent('MouseEvents'),
+        a    = document.createElement('a')
+
+    a.download = filename
+    a.href = window.URL.createObjectURL(blob)
+    a.dataset.downloadurl =  ['text/json', a.download, a.href].join(':')
+    e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+    a.dispatchEvent(e)
+ }
+})(console)
+
