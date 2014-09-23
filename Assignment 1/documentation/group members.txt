@@ -8,5 +8,5 @@ Shinelle Hutchinson: 812001160
 
 
 
-githud 
+github
 https://github.com/frostiee22/COMP3550
